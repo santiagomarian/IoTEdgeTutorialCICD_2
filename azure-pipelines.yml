@@ -54,6 +54,9 @@ stages:
       inputs:
         action: 'Deploy to IoT Edge devices'
         deploymentFilePath: '$(System.DefaultWorkingDirectory)/config/deployment.json'
+        azureSubscription: 'Azure for Students(f0ac0fa7-7b46-46ab-aff0-b8edeb97d3bd)'
+        iothubname: 'myiothubsmm'
         deploymentid: '$(System.TeamProject)-devops-deployment'
         priority: '0'
-      displayName: 'Deploy to IoT Edge devices'
+        deviceOption: 'Single Device'
+        deviceId: 'edgedeviceidentitysmm1'

@@ -37,8 +37,8 @@ stages:
         sudo apt install python3.9
         #install pip
         sudo apt install python3.9-discutils
-        curl https://bootstrap-pypa.io/get-pip.py -o get-pip.py
-        python3.9 get-pip-py
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        python3.9 get-pip.py
         #install iotedgedev
         python3.9 -m pip install -U iotedgedev pyOpenSSL==22.0.0 urllib3==1.22 requests
       displayName: 'Command Line Script'
